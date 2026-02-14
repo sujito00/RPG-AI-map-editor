@@ -1,0 +1,39 @@
+{
+  "name": "godot-map-cli",
+  "version": "0.1.0",
+  "description": "CLI + MCP server for AI-driven Godot 4 TileMap editing",
+  "type": "module",
+  "bin": {
+    "godot-map-cli": "./dist/cli.js"
+  },
+  "main": "dist/mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start:mcp": "node dist/mcp-server.js",
+    "start:cli": "node dist/cli.js",
+    "test": "node --test tests/*.test.ts --loader ts-node/esm"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  },
+  "keywords": [
+    "godot",
+    "tilemap",
+    "tileset",
+    "mcp",
+    "ai",
+    "rpg",
+    "map-editor",
+    "cli"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
